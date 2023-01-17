@@ -21,10 +21,10 @@ void QRCodeTexture2D::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("set_color", "color"), &QRCodeTexture2D::set_color);
 	ClassDB::bind_method(D_METHOD("get_color"), &QRCodeTexture2D::get_color);
 
-	ADD_PROPERTY(PropertyInfo(Variant::STRING, "content", PROPERTY_HINT_MULTILINE_TEXT, "", PROPERTY_USAGE_DEFAULT_INTL), "set_content", "get_content");
+	ADD_PROPERTY(PropertyInfo(Variant::STRING, "content", PROPERTY_HINT_MULTILINE_TEXT, ""), "set_content", "get_content");
 	ADD_PROPERTY(PropertyInfo(Variant::COLOR, "color"), "set_color", "get_color");
-	ADD_PROPERTY(PropertyInfo(Variant::INT, "border", PROPERTY_HINT_RANGE, "0,20,1", PROPERTY_USAGE_EDITOR), "set_border", "get_border");
-	ADD_PROPERTY(PropertyInfo(Variant::INT, "error_correction_level", PROPERTY_HINT_RANGE, "1,4,1", PROPERTY_USAGE_EDITOR), "set_ecl", "get_ecl");
+	ADD_PROPERTY(PropertyInfo(Variant::INT, "border", PROPERTY_HINT_RANGE, "0,20,1"), "set_border", "get_border");
+	ADD_PROPERTY(PropertyInfo(Variant::INT, "error_correction_level", PROPERTY_HINT_RANGE, "1,4,1"), "set_ecl", "get_ecl");
 }
 
 QRCodeTexture2D::QRCodeTexture2D() {
