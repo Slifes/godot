@@ -5,7 +5,7 @@
 
 #include "qrcodegen.hpp"
 
-#include "scene/resources/texture.h"
+#include "scene/resources/image_texture.h"
 
 using qrcodegen::QrCode;
 
